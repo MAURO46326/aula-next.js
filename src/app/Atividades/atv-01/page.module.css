@@ -1,0 +1,9 @@
+.containeratv1{
+    border: 2px solid #00f; 
+    display: flex; 
+    flex-direction: column;
+    background-color: #EAF4FF;
+}
+.paragrafo{
+    font-size: 1.6rem;
+}
