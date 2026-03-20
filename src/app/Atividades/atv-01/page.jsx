@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 
 function atividade01 () {
     return(
-        <div class={styles.containeratv1}>
+        <div className={styles.containeratv1}>
             <h1>Atividade 01</h1>
             <p class={styles.paragrafo}>A curiosidade é uma das forças mais poderosas do ser humano. Desde cedo, somos movidos pelo desejo de entender o mundo ao nosso redor: por que o céu muda de cor ao entardecer, como as plantas crescem ou de que forma as ideias surgem em nossa mente. Essa busca constante por respostas é o que impulsiona descobertas, inovações e novas maneiras de enxergar a realidade.
 
