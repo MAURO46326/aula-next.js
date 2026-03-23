@@ -3,11 +3,14 @@
     flex-direction: column; 
     justify-content: center;
     height: 96vh;
+    display: flex;
 }
 
 .texto {
     font-size: 3.5rem; 
     margin: 2rem 0;
+    text-align: center;
+    margin: 1rem;
 }
 
 .botao {
