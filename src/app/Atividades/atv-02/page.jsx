@@ -27,13 +27,13 @@ export default function Exemplo03() {
         <div className={styles.texto}>
 
             <label 
-                onClick={() => handleIncrementa()}
-                className={styles.botao}
-            >+1</label>
-            <label 
                 onClick={() => handleredução()}
                 className={styles.botao}
             >-1</label>
+            <label 
+                onClick={() => handleIncrementa()}
+                className={styles.botao}
+            >+1</label>
             </div>
         </div>
     );
