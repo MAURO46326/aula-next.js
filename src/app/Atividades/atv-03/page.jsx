@@ -8,19 +8,17 @@ import styles from './page.module.css';
 
 function Exemplo04() {
     // O hook useState gerencia o valor do contador
-    const [contador, setContador] = useState(0);
-
-    const incrementar = () => setContador(contador + 1);
-    const decrementar = () => setContador(contador - 1);
-
+    const [acao, setAcao] = useState("cadastrar");
     return (
         <div className={styles.container}>
-            <h1>Atividade 3 - Uso de componentes</h1>
-            <h2>O valor atual é: {contador}</h2>
+            <h1>Atividade 3</h1>
+            <h2>Ação selecionada: <span>{acao}</span></h2>
 
-            {/* Passando funções e textos via Props para o componente Botao */}
-            <Botao texto="Aumentar +" aoClicar={incrementar} acao={'+'} />
-            <Botao texto="Diminuir -" aoClicar={decrementar} acao={'-'} />
+            <Botao texto="Cadastrar" aoClicar={() => setAcao('Cadastrar')}/>
+            <Botao texto="Editar" aoClicar={() => setAcao("Editar")}/>
+            <Botao texto="Listar" aoClicar={() => setAcao('Listar')}/>
+            <Botao texto="Excluir" aoClicar={() => setAcao('Excluir')}/>
+            <Botao texto="Cancelar" aoClicar={() => setAcao('Cancelar')}/>
         </div>
     );
 }
